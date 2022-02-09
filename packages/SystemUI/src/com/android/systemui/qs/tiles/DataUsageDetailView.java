@@ -61,6 +61,11 @@ public class DataUsageDetailView extends LinearLayout {
                 R.dimen.qs_data_usage_text_size);
     }
 
+    @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
     public void bind(DataUsageController.DataUsageInfo info) {
         final Resources res = mContext.getResources();
         final int titleId;

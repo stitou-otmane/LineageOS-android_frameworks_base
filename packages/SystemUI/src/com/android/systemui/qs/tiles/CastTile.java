@@ -83,6 +83,11 @@ public class CastTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public DetailAdapter getDetailAdapter() {
         return mDetailAdapter;
     }

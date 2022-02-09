@@ -56,6 +56,11 @@ public class SyncTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public Intent getLongClickIntent() {
         Intent intent = new Intent("android.settings.SYNC_SETTINGS");
         intent.addCategory(Intent.CATEGORY_DEFAULT);

@@ -59,6 +59,11 @@ public class UsbTetherTile extends QSTileImpl<BooleanState> {
         mConnectivityManager = mContext.getSystemService(ConnectivityManager.class);
     }
 
+    @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
     public BooleanState newTileState() {
         return new BooleanState();
     }

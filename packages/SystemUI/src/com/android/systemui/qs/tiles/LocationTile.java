@@ -84,6 +84,11 @@ public class LocationTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public CharSequence getTileLabel() {
         return mContext.getString(R.string.quick_settings_location_label);
     }

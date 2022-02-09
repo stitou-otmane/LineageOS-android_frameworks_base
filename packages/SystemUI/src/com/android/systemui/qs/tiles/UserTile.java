@@ -53,6 +53,11 @@ public class UserTile extends QSTileImpl<State> implements UserInfoController.On
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public Intent getLongClickIntent() {
         return new Intent(Settings.ACTION_USER_SETTINGS);
     }
