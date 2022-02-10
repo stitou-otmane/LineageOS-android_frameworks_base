@@ -75,6 +75,11 @@ public class AdbOverNetworkTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     protected void handleClick() {
         if (mKeyguardMonitor.isSecure() && !mUnlockMethodCache.canSkipBouncer()) {
             Dependency.get(ActivityStarter.class)

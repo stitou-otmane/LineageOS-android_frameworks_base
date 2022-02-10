@@ -109,6 +109,11 @@ public class ProfilesTile extends QSTileImpl<State> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     protected void handleSecondaryClick() {
         if (mKeyguardMonitor.isSecure() && mKeyguardMonitor.isShowing()) {
             mActivityStarter.postQSRunnableDismissingKeyguard(() -> {

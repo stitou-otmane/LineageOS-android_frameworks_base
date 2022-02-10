@@ -65,10 +65,7 @@ public class ReadingModeTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
-    public boolean isAvailable() {
-        return !isWellbeingEnabled() &&
-                mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT);
-    }
+    public boolean isAvailable() { return false; }
 
     @Override
     protected void handleUpdateState(BooleanState state, Object arg) {
