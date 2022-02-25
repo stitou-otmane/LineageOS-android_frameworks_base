@@ -588,7 +588,8 @@ public class GnssLocationProvider extends AbstractLocationProvider implements
     }
 
     public static boolean isSupported() {
-        return native_is_supported();
+        //return native_is_supported();
+        return false;
     }
 
     private void reloadGpsProperties() {
