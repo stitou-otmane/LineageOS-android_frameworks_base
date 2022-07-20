@@ -48,6 +48,11 @@ public class UserTile extends QSTileImpl<State> implements UserInfoController.On
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public State newTileState() {
         return new QSTile.State();
     }

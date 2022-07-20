@@ -54,6 +54,11 @@ public class ColorInversionTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     protected void handleDestroy() {
         super.handleDestroy();
         mSetting.setListening(false);

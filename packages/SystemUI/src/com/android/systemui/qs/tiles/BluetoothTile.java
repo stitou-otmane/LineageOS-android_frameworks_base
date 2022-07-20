@@ -241,7 +241,7 @@ public class BluetoothTile extends QSTileImpl<BooleanState> {
 
     @Override
     public boolean isAvailable() {
-        return mController.isBluetoothSupported();
+        return false;
     }
 
     private final BluetoothController.Callback mCallback = new BluetoothController.Callback() {

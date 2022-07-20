@@ -80,6 +80,11 @@ public class RotationLockTile extends QSTileImpl<BooleanState> {
         state.state = state.value ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE;
     }
 
+    @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
     public static boolean isCurrentOrientationLockPortrait(RotationLockController controller,
             Resources resources) {
         int lockOrientation = controller.getRotationLockOrientation();

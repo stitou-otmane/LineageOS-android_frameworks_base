@@ -72,7 +72,7 @@ public class NfcTile extends QSTileImpl<BooleanState> {
 
     @Override
     public boolean isAvailable() {
-        return mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_NFC);
+        return false;
     }
 
     @Override

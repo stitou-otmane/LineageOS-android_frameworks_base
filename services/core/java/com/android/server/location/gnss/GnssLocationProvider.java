@@ -604,11 +604,7 @@ public class GnssLocationProvider extends AbstractLocationProvider implements
     }
 
     public static boolean isSupported() {
-        if (sStaticTestOverride) {
-            return true;
-        }
-        ensureInitialized();
-        return native_is_supported();
+        return false;
     }
 
     private static synchronized void ensureInitialized() {

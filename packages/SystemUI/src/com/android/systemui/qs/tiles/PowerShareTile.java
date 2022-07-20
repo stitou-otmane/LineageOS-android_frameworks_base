@@ -114,7 +114,7 @@ public class PowerShareTile extends QSTileImpl<BooleanState>
 
     @Override
     public boolean isAvailable() {
-        return mPowerShare != null;
+        return false;
     }
 
     @Override

@@ -78,6 +78,11 @@ public class CaffeineTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public void handleSetListening(boolean listening) {
     }
 

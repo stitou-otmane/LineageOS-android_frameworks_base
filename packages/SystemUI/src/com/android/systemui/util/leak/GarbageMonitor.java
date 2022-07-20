@@ -418,6 +418,11 @@ public class GarbageMonitor implements Dumpable {
         }
 
         @Override
+        public boolean isAvailable() {
+            return false;
+        }
+
+        @Override
         protected void handleClick() {
             if (dumpInProgress) return;
 

@@ -96,6 +96,11 @@ public class CastTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public void handleSetListening(boolean listening) {
         super.handleSetListening(listening);
         if (DEBUG) Log.d(TAG, "handleSetListening " + listening);

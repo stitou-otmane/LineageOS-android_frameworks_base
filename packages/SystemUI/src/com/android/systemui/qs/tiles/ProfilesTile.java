@@ -84,6 +84,11 @@ public class ProfilesTile extends QSTileImpl<State> {
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public State newTileState() {
         return new State();
     }

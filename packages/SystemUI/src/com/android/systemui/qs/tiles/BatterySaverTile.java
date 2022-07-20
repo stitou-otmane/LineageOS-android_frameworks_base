@@ -61,6 +61,11 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public BooleanState newTileState() {
         return new BooleanState();
     }

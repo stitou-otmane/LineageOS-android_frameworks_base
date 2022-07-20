@@ -1119,17 +1119,6 @@ public final class BluetoothAdapter {
      */
     @RequiresPermission(Manifest.permission.BLUETOOTH_ADMIN)
     public boolean enable() {
-        if (isEnabled()) {
-            if (DBG) {
-                Log.d(TAG, "enable(): BT already enabled!");
-            }
-            return true;
-        }
-        try {
-            return mManagerService.enable(ActivityThread.currentPackageName());
-        } catch (RemoteException e) {
-            Log.e(TAG, "", e);
-        }
         return false;
     }
 

@@ -53,6 +53,11 @@ public class ScreenRecordTile extends QSTileImpl<QSTile.BooleanState>
     }
 
     @Override
+    public boolean isAvailable() {
+        return false;
+    }
+
+    @Override
     public BooleanState newTileState() {
         BooleanState state = new BooleanState();
         state.label = mContext.getString(R.string.quick_settings_screen_record_label);
