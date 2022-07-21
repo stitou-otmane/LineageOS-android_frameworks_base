@@ -68,11 +68,6 @@ public class ReadingModeTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
-    public boolean isAvailable() {
-        return mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT);
-    }
-
-    @Override
     protected void handleUpdateState(BooleanState state, Object arg) {
         state.value = isReadingModeEnabled();
         state.icon = mIcon;
